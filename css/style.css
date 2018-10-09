@@ -1,0 +1,189 @@
+/*//////fonts css/////////*/
+@font-face {
+	font-family: 'latobold';
+	src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+	url('../fonts/lato-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'latoregular';
+	src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+	url('../fonts/lato-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*/////*/
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 0 15px;
+}
+
+.container {
+	max-width: 1140px;
+	padding: 80px 15px;
+	margin: 0 auto;
+}
+
+h1,
+h3,
+h4 {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'latobold';
+	font-size: 30px;
+	margin: 0 0 15px 0;
+}
+
+h3 {
+	font-family: 'latoregular';
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+
+h4 {
+	font-family: 'latoregular';
+	font-size: 14px;
+	color: #e5e5e5;
+	margin: 0 0 60px 0;
+}
+
+.item {
+	width: 25%;
+}
+
+.info-item {
+	padding: 0 15px;
+}
+
+.style-one,
+.style-two,
+.style-for-price {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.style-two {
+	justify-content: space-around;
+}
+
+.item-row {
+	margin: 0 -15px;
+	padding-bottom: 60px;
+}
+
+.star {
+	padding: 0;
+}
+
+.price {
+	font-family: 'latobold';
+	color: #f48a99;
+}
+
+
+@media (min-width: 650px) and (max-width: 991px) {
+
+.item-row {
+	padding: 0;
+}
+
+.style-for-price {
+flex-direction: column; 
+}
+
+.item {
+	width: 50%;
+	padding: 15px 35px;
+}
+
+.style-one,
+.style-two {
+	 flex-wrap: wrap;
+	 justify-content: space-around;
+}
+
+h3 {
+	font-size: 15px;
+	letter-spacing: .5em;
+	}
+
+}
+
+@media (max-width: 649px) {
+
+.item-row {
+	padding: 0;
+}
+
+.style-for-price {
+flex-direction: column; 
+}
+
+.item {
+	width: 100%;
+	padding: 15px 35px;
+}
+
+.style-one,
+.style-two {
+	 flex-wrap: wrap;
+	 justify-content: space-around;
+}
+
+h3 {
+	font-size: 15px;
+	letter-spacing: .3em;
+	}
+}
+
+@media (max-width: 480px) {
+.item-row {
+	padding: 0;
+}
+
+.style-for-price {
+flex-direction: column; 
+}
+
+.item {
+	width: 100%;
+	padding: 15px 15px;
+}
+
+.style-one,
+.style-two {
+	 flex-wrap: wrap;
+	 justify-content: space-around;
+}
+
+.container {
+	padding: 30px 15px;
+	margin: 0 auto;
+}
+
+h4 {
+	margin: 0 0 15px 0;
+}
+
+}
